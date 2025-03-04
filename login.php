@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         <p class="mt-3 text-center">
           Don't have an account? 
-          <a href="#">Register here</a>.
+          <a href="register.php">Register here</a>.
           <!-- Link to your register.php if you create one -->
         </p>
       </div>

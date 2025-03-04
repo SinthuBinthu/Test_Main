@@ -1,12 +1,11 @@
 /* register.css */
 
+/* Gradient-Hintergrund + zentrierte Ausrichtung */
 body {
     background: linear-gradient(135deg, #74ABE2, #5563DE);
     min-height: 100vh;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-  
-    /* Center the card horizontally & vertically */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +32,7 @@ body {
     font-weight: 700;
     font-size: 1.75rem;
     color: #333;
+    text-align: center;
   }
   
   .btn-primary {
@@ -43,5 +43,15 @@ body {
   
   .btn-primary:hover {
     background-color: #3f4bd1;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
   }
   
