@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -48,7 +52,34 @@
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-						<li><a href="account.php"><i class="fa fa-user-o"></i> My Account</a></li>
+
+						
+					<ul class="header-links pull-right">
+					<!-- Keep the USD line -->
+					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+
+					<!-- REMOVE this line:
+					<li><a href="account.php"><i class="fa fa-user-o"></i> My Account</a></li>
+					-->
+
+					<!-- REPLACE with the snippet: -->
+					<?php if (isset($_SESSION['username'])): ?>
+						<li>
+						<a href="profile.php">
+							<i class="fa fa-user-o"></i> <?php echo htmlspecialchars($_SESSION['username']); ?>
+						</a>
+						</li>
+					<?php else: ?>
+						<li>
+						<a href="account.php">
+							<i class="fa fa-user-o"></i> My Account
+						</a>
+						</li>
+					<?php endif; ?>
+					</ul>
+
+
+
 					</ul>
 				</div>
 			</div>
