@@ -405,6 +405,32 @@ textarea.input {
 /*=========================================================
 	02 -> HEADER
 ===========================================================*/
+/* Hintergrundfarbe für Dropdown */
+.dropdown-menu {
+  background-color: #222 !important;
+  border-radius: 5px;
+}
+
+/* Dropdown-Links */
+.dropdown-menu .dropdown-item {
+  color: #15161D !important;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+/* Hover-Effekt */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #d10024;
+  color: #000;
+}
+
+/* Icons Styling */
+.dropdown-menu .dropdown-item i {
+  margin-right: 10px;
+  color: #000;
+}
+
 
 /*----------------------------*\
 	Top header
